@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <style>
+        
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;}
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(45deg, #002523, #2d002c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            background: linear-gradient(
+                to right,
+                rgb(250,78,10),
+                rgb(247,12,204),
+                rgb(0,106,255),
+                rgb(48,248,255)
+            );
+            background-clip: text;
+            color: transparent;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+        }
+        h1:hover {
+            transform: scale(1.05);
+        }
+
+        .abc {
+            justify-content: center;
+            place-items: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        button {
+            padding: 1em 2em;
+            background-color: #010029;
+            border-radius: 1rem;
+            font-size: 24px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            margin-bottom: 50px;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transform: scale(1.05);
+            border-radius: 1rem;
+            background: linear-gradient(to top right, #00fff7, #ff00f7);
+            z-index: -1;
+        }
+        button:hover {
+            z-index: 0;
+            box-shadow: 25px 0 100px #e100ff, -25px 0 100px #008cff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Memory Game</h1>
+    <div class="abc">
+        <img src="https://t4.ftcdn.net/jpg/04/42/21/53/360_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg" height="800px" width="1700px">
+        <a href="http://127.0.0.1:5501/a.html">
+            <button>Start</button>
+        </a>
+    </div>
+</body>
+</html>
